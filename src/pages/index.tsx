@@ -34,13 +34,13 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center p-10">
       <Map locations={locations} />
       <section className="bg-gray-2 rounded-xl">
-        <div className="p-8 shadow-lg">
+        <div className="p-4 shadow-md w-">
           <form className="space-y-4">
 
-            <div className="w-full">
+            <div className="w-[75rem]">
               <label className="sr-only" htmlFor="message">Message</label>
 
               <textarea
