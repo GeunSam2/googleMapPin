@@ -15,8 +15,6 @@ export default function Home() {
     event?.preventDefault()
     if (!address.trim()) return; // 주소가 비어있는 경우 바로 반환
 
-    console.log(address.split('\n'))
-
     const payload = {
       addresses: address.split('\n')
     };
