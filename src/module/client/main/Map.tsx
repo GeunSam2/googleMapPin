@@ -1,10 +1,9 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import { info } from 'console';
 
 const containerStyle = {
-  width: '1200px',
-  height: '650px'
+  width: '100%',
+  height: '700px'
 };
 
 interface MapProps {

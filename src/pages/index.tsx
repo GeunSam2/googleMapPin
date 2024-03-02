@@ -33,31 +33,33 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center p-10">
-      <Map locations={locations} />
-      <section className="bg-gray-2 rounded-xl">
-        <div className="p-4 shadow-md w-">
-          <form className="space-y-4">
+      <div className='h-[700px] w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1200px]'>
+        <Map locations={locations} />
+        <section className="bg-gray-2 rounded-xl mt-5">
+          <div className="p-4 shadow-md">
+            <form className="space-y-4">
 
-            <div className="w-[75rem]">
-              <label className="sr-only" htmlFor="message">Message</label>
+              <div className="w-full">
+                <label className="sr-only" htmlFor="message">Message</label>
 
-              <textarea
-                className="textarea textarea-solid max-w-full"
-                placeholder="Enter an address" rows={10} id="message"
-                onChange={(e) => setAddress(e.target.value)}
-              />
-            </div>
+                <textarea
+                  className="textarea textarea-solid max-w-full"
+                  placeholder="Enter an address" rows={10} id="message"
+                  onChange={(e) => setAddress(e.target.value)}
+                />
+              </div>
 
-            <div className="mt-4">
-              <button
-                onClick={handleGeocodeAddress}
-                className="rounded-lg btn btn-primary btn-block">
-                Search
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
+              <div className="mt-4">
+                <button
+                  onClick={handleGeocodeAddress}
+                  className="rounded-lg btn btn-primary btn-block">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
